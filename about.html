@@ -1,124 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Foamexo</title>
-    <!-- favicon -->
-    <!-- <link rel="shortcut icon" href="assets/images/favicon.png"
-      type="image/x-icon"> -->
-    <!-- bootstrap -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <!-- fontawesome -->
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
-    <!-- Flat Icon -->
-    <link rel="stylesheet" href="assets/css/flaticon.css">
-    <!-- animate -->
-    <link rel="stylesheet" href="assets/css/animate.css">
-    <!-- Owl Carousel -->
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <!-- magnific popup -->
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <!-- AOS css -->
-    <link rel="stylesheet" href="assets/css/aos.css">
-    <!-- stylesheet -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!-- responsive -->
-    <link rel="stylesheet" href="assets/css/responsive.css">
-    <style>
-        .float {
-            position: fixed;
-            width: 60px;
-            height: 60px;
-            bottom: 40px;
-            right: 40px;
-            background-color: #25d366;
-            color: #FFF;
-            border-radius: 50px;
-            text-align: center;
-            font-size: 30px;
-            box-shadow: 2px 2px 3px #999;
-            z-index: 100;
-        }
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Foamexo - About Us</title>
 
-        .my-float {
-            margin-top: 16px;
-        }
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+  <link rel="stylesheet" href="assets/css/flaticon.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/css/magnific-popup.css">
+  <link rel="stylesheet" href="assets/css/aos.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
 
-        .float1 {
-            position: fixed;
-            width: 60px;
-            height: 60px;
-            bottom: 109px;
-            right: 40px;
-            background-color: #25d366;
-            color: #FFF;
-            border-radius: 50px;
-            text-align: center;
-            font-size: 30px;
-            box-shadow: 2px 2px 3px #999;
-            z-index: 100;
-        }
-
-        .my-float1 {
-            margin-top: 16px;
-        }
-
-
-
-        .float3 {
-            position: fixed;
-            width: 60px;
-            height: 60px;
-            bottom: 178px;
-            right: 40px;
-            background-color: #25d366;
-            color: #FFF;
-            border-radius: 50px;
-            text-align: center;
-            font-size: 30px;
-            box-shadow: 2px 2px 3px #999;
-            z-index: 100;
-        }
-
-        .my-float3 {
-            margin-top: 16px;
-        }
-        </style>
-    <style>
-        .fa-phone {
-            transform: none; /* Fix rotation */
-        }
-        </style>
-    <style>
-    /* General Styles */
+  <style>
     body {
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      box-sizing: border-box;
       background-color: #f4f4f4;
       overflow-x: hidden;
     }
 
-    /* Container */
     .container {
-      width: 90%;
+      /* width: 90%; */
       max-width: 1200px;
-      margin: 0 auto;
-      padding: 20px;
+      margin: auto;
+      /* padding: 20px; */
     }
 
-    /* Section Title */
     .section-title {
       text-align: center;
       font-size: 36px;
       margin-bottom: 30px;
       color: #333;
       position: relative;
-      overflow: hidden;
     }
 
     .section-title::before {
@@ -139,20 +59,16 @@
       }
     }
 
-    /* About Us Section */
     .about-us {
-      padding: 60px 0;
       background-color: #ffffff;
-      position: relative;
-      overflow: hidden;
+      padding: 60px 0;
     }
 
     .content {
       display: flex;
-      justify-content: space-between;
+      flex-wrap: wrap;
       align-items: center;
       margin-bottom: 40px;
-      flex-wrap: wrap;
       opacity: 0;
       transform: translateY(20px);
       animation: fadeInUp 1s forwards;
@@ -170,36 +86,31 @@
       transition: transform 0.3s ease-in-out;
     }
 
-    /* Text Section */
     .text-section {
       flex: 1;
       padding-right: 20px;
-      transition: all 0.3s ease-in-out;
     }
 
     .text-section h2 {
       font-size: 28px;
-      color: #333;
       margin-bottom: 20px;
+      color: #333;
     }
 
     .text-section p {
       font-size: 16px;
-      line-height: 1.6;
       color: #555;
+      line-height: 1.6;
     }
 
-    /* Image Section */
     .image-section {
       flex: 1;
       text-align: center;
-      transform: scale(1);
       transition: transform 0.3s ease-in-out;
     }
 
-    .about-image {
+    .image-section img {
       max-width: 100%;
-      height: auto;
       border-radius: 8px;
     }
 
@@ -207,341 +118,188 @@
       transform: scale(1.05);
     }
 
-    /* Mission and Vision Section */
     .mission-vision {
       display: flex;
-      justify-content: space-between;
       flex-wrap: wrap;
+      gap: 20px;
       opacity: 0;
       transform: translateY(20px);
       animation: fadeInUp 1.2s forwards;
     }
 
-    .mission,
-    .vision {
+    .mission, .vision {
       flex: 1;
-      margin: 20px;
-      padding: 20px;
       background-color: #fafafa;
+      padding: 20px;
       border-radius: 8px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-      transition: all 0.3s ease-in-out;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .mission h2,
-    .vision h2 {
+    .mission h2, .vision h2 {
       font-size: 24px;
       margin-bottom: 10px;
     }
 
-    .mission p,
-    .vision p {
+    .mission p, .vision p {
       font-size: 16px;
-      line-height: 1.6;
       color: #555;
+      line-height: 1.6;
     }
 
-    .mission:hover,
-    .vision:hover {
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    .mission:hover, .vision:hover {
       transform: translateY(-5px);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
     }
 
-    /* Floating Action Button Styles */
-    .float {
+    /* Floating Action Buttons */
+    .float, .float1 {
       position: fixed;
       width: 60px;
       height: 60px;
-      bottom: 40px;
-      right: 40px;
-      background-color: #25d366;
-      color: #FFF;
       border-radius: 50px;
       text-align: center;
       font-size: 30px;
+      color: #fff;
+      background-color: #25d366;
       box-shadow: 2px 2px 3px #999;
       z-index: 100;
-      transition: all 0.3s ease;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .float:hover, .float1:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .float {
+      bottom: 40px;
+      right: 40px;
+    }
+
+    .float1 {
+      bottom: 110px;
+      right: 40px;
     }
 
     .my-float {
       margin-top: 16px;
     }
 
-    .float1 {
-      position: fixed;
-      width: 60px;
-      height: 60px;
-      bottom: 109px;
-      right: 40px;
-      background-color: #25d366;
-      color: #FFF;
-      border-radius: 50px;
-      text-align: center;
-      font-size: 30px;
-      box-shadow: 2px 2px 3px #999;
-      z-index: 100;
-      transition: all 0.3s ease;
-    }
-
-    .my-float1 {
-      margin-top: 16px;
-    }
-
-    .float:hover,
-    .float1:hover {
-      transform: scale(1.1);
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-    }
-
-    /* Responsive Design */
     @media (max-width: 768px) {
       .content {
         flex-direction: column;
-        text-align: center;
       }
 
-      .image-section {
-        margin-top: 20px;
+      .text-section {
+        padding-right: 0;
+        text-align: center;
       }
 
       .mission-vision {
         flex-direction: column;
       }
-
-      .mission,
-      .vision {
-        margin: 10px 0;
-      }
     }
-        </style>
-  </head>
-  <body>
-       <a href="https://api.whatsapp.com/send?phone=+918589030444&text=Hai"
-      class="float1" target="_blank">
-      <i class="fab fa-whatsapp my-float"></i>
-    </a>
-    <a href="tel:+9918589030444" class="float" target="_blank">
-      <i style="transform: rotate(90deg);" class="fa fa-phone my-float1"></i>
-    </a>
-    <!-- preloader area start -->
-    <!-- <div class="preloader" id="preloader">
-      <div class="preloader-inner">
-        <div class="cube-wrapper">
-          <div class="cube-folding">
-            <span class="leaf1"></span>
-            <span class="leaf2"></span>
-            <span class="leaf3"></span>
-            <span class="leaf4"></span>
-          </div>
-          <span class="loading" data-name="Loading">Loading</span>
+  </style>
+</head>
+
+<body>
+
+  <!-- WhatsApp and Phone Buttons -->
+  <a href="https://api.whatsapp.com/send?phone=+918589030444&text=Hai" class="float1" target="_blank">
+    <i class="fab fa-whatsapp my-float"></i>
+  </a>
+  <a href="tel:+918589030444" class="float" target="_blank">
+    <i class="fa fa-phone my-float" style="transform: rotate(90deg);"></i>
+  </a>
+
+  <!-- Header -->
+  <header class="navigation">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html">
+          <img src="assets/images/logo-color.png" alt="Foamexo Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainmenu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainmenu">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="index.html#about">Why Foamexo</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <section class="breadcrumb-area">
+    <div class="container">
+      <h4 class="title">About Us</h4>
+      <ul class="breadcrumb-list">
+        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+        <li><span><i class="fas fa-chevron-right"></i></span></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- About Us Section -->
+  <section class="about-us">
+    <div class="container">
+      <div class="content">
+        <div class="text-section">
+          <h2>Who We Are</h2>
+          <p>
+            At <strong>Foamexo</strong>, we believe in transforming the way people sleep.
+            We craft premium mattresses with precision and passion, designed to deliver
+            the perfect balance of comfort, support, and durability.
+            Our focus is to help people wake up refreshed, energized, and ready to take on the day.
+          </p>
+        </div>
+        <div class="image-section">
+          <img src="assets/images/about.jpg" alt="Foamexo Mattress" />
         </div>
       </div>
-    </div> -->
-    <!-- preloader area end -->
-    <!-- Navebar Area start -->
-    <header class="navigation">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 p-0">
-            <nav class="navbar navbar-expand-lg navbar-light">
-              <a class="navbar-brand" href="index.html">
-                <img src="assets/images/logo-color.png" alt>
-              </a>
-              <button
-                class="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#mainmenu"
-                aria-controls="mainmenu"
-                aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="mainmenu">
-                <ul class="navbar-nav ml-auto">
-                  <li class="nav-item ">
-                  <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link active" href="about.html">About</a>
-                </li>
-               
-                <li class="nav-item">
-                  <a class="nav-link" href="index.html#about">Why Foamexo</a>
-                </li>
-           
-             
-                <li class="nav-item">
-                  <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-                </ul>
-              </div>
-            </nav>
-          </div>
+
+      <div class="mission-vision">
+        <div class="vision">
+          <h2>Our Vision</h2>
+          <p>
+            To become a global leader in sleep innovation, offering unmatched comfort and support
+            through premium-quality mattresses that cater to every individual’s unique sleep needs.
+          </p>
+        </div>
+        <div class="mission">
+          <h2>Our Mission</h2>
+          <p>
+            Our mission is simple: <strong>To provide the best sleep experience to every customer</strong>.
+            We aim to improve sleep quality by designing products that promote health,
+            well-being, and restful nights, ensuring our customers wake up feeling their best every day.
+          </p>
         </div>
       </div>
-    </header>
-    <!-- Navebar Area End -->
-    <!-- Breadcrumb Area Start -->
-    <section class="breadcrumb-area bottomToTop">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12">
-            <h4 class="title">
-              About us
-            </h4>
-            <ul class="breadcrumb-list bottomToTop">
-              <li>
-                <a href="index.html">
-                  <i class="fas fa-home"></i>
-                  Home
-                </a>
-              </li>
-              <li>
-                <span>
-                  <i class="fas fa-chevron-right"></i>
-                </span>
-              </li>
-              <li>
-                <a href="#">About us</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- Breadcrumb Area End -->
-    <section class="about-us">
-      <div class="container">
-        <!-- <h1 class="section-title">About Us</h1> -->
+    </div>
+  </section>
 
-        <div class="content">
-          <div class="text-section leftToRight">
-            <h2>Who We Are</h2>
-            <p>At <strong>Foamexo</strong>, we believe in transforming the way
-              people sleep. We craft premium mattresses with precision and
-              passion, designed to deliver the perfect balance of comfort,
-              support, and durability. Our focus is to help people wake up
-              refreshed, energized, and ready to take on the day.</p>
-          </div>
-
-          <div class="image-section leftToRight">
-            <img src="assets/images/about.jpg" alt="Foamexo Mattress"
-              class="about-image">
-          </div>
-        </div>
-
-        <div class="mission-vision">
-          <div class="vision">
-            <h2>Our Vision</h2>
-            <p>To become a global leader in sleep innovation, offering unmatched
-              comfort and support through premium-quality mattresses that cater
-              to every individual’s unique sleep needs.</p>
-          </div>
-
-          <div class="mission">
-            <h2>Our Mission</h2>
-            <p>Our mission is simple: <strong>To provide the best sleep
-                experience to every customer</strong>. We aim to improve sleep
-              quality by designing products that promote health, well-being, and
-              restful nights, ensuring our customers wake up feeling their best
-              every day.</p>
-          </div>
-        </div>
-      </div>
-    </section>  
-    
-    <!-- Footer Section Start -->
+  <!-- Footer -->
   <footer class="footer" id="footer">
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-md-6">
-          <div class="footer-info-area">
-            <div class="footer-logo">
-              <a href="#" class="logo-link topTOBottom">
-                <img src="assets/images/logo-color.png" alt="">
-              </a>
-            </div>
-            <div class="text">
-              <p>Designed for your comfort, engineered for better sleep—Foamexo mattresses combine style, support, and innovation to deliver unmatched rest every night.
-              </p>
-            </div>
-          </div>
-          <div class="fotter-social-links topTOBottom">
-            <ul>
-              <li>
-                <a target="_blank" href="https://www.facebook.com/profile.php?id=61573506643043" class="facebook">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-              </li>
-              <li>
-                <a target="_blank" href="https://www.instagram.com/foam.exo/" class="twitter">
-                  <i class="fab fa-instagram"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="linkedin">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="google-plus">
-                  <i class="fab fa-google-plus-g"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#" class="dribbble">
-                  <i class="fab fa-dribbble"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="copy-bg text-center">
-      <p>Copyright © 2025. All rights reserved by
-        <a href="#">Draway Media</a>
-      </p>
+      <p style="text-align:center; padding: 20px 0;">&copy; 2025 Foamexo. All rights reserved.</p>
     </div>
   </footer>
-  <!-- Footer Section End -->
 
-  <!-- Back to Top Start -->
-  <!-- <div class="bottomtotop">
-    <i class="fa fa-chevron-right"></i>
-  </div> -->
-  <!-- Back to Top End -->
+ <!-- JS Files -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 
-
-  <!-- jquery -->
-  <script src="assets/js/jquery.js"></script>
-  <!-- popper -->
-  <script src="assets/js/popper.min.js"></script>
-  <!-- bootstrap -->
-  <script src="assets/js/bootstrap.min.js"></script>
-  <!-- way poin js-->
-  <script src="assets/js/waypoints.min.js"></script>
-  <!-- owl carousel -->
-  <script src="assets/js/owl.carousel.min.js"></script>
-  <!-- magnific popup -->
-  <script src="assets/js/jquery.magnific-popup.js"></script>
-  <!-- aos js-->
-  <script src="assets/js/aos.js"></script>
-  <!-- counterup js-->
-  <script src="assets/js/jquery.countdown.min.js"></script>
-  <!-- easing js-->
-  <script src="assets/js/jquery.easing.1.3.js"></script>
-  <!-- Map js -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7eALQrRUekFNQX71IBNkxUXcz-ALS-MY&amp;sensor=false"></script>
-	<script src="assets/js/gmap.js"></script>
-  <!-- main -->
-  <script src="assets/js/contact.js"></script>
-  <!-- main -->
-  <script src="assets/js/main.js"></script>
 </body>
-
-
-
 </html>
